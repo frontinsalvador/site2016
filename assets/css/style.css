@@ -1,0 +1,609 @@
+/* Front In Salvador 2016 */
+
+
+@font-face {
+	font-family: 'Gotham Book';
+	src: url('../fonts/Gotham-BookItalic.eot');
+	src: url('../fonts/Gotham-BookItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gotham-BookItalic.woff2') format('woff2'),
+		url('../fonts/Gotham-BookItalic.woff') format('woff'),
+		url('../fonts/Gotham-BookItalic.ttf') format('truetype'),
+		url('../fonts/Gotham-BookItalic.svg#Gotham-BookItalic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/Gotham-Bold.eot');
+	src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gotham-Bold.woff2') format('woff2'),
+		url('../fonts/Gotham-Bold.woff') format('woff'),
+		url('../fonts/Gotham-Bold.ttf') format('truetype'),
+		url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/Gotham-Medium.eot');
+	src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gotham-Medium.woff2') format('woff2'),
+		url('../fonts/Gotham-Medium.woff') format('woff'),
+		url('../fonts/Gotham-Medium.ttf') format('truetype'),
+		url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/Gotham-Light.eot');
+	src: url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gotham-Light.woff2') format('woff2'),
+		url('../fonts/Gotham-Light.woff') format('woff'),
+		url('../fonts/Gotham-Light.ttf') format('truetype'),
+		url('../fonts/Gotham-Light.svg#Gotham-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Book';
+	src: url('../fonts/Gotham-Book.eot');
+	src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gotham-Book.woff2') format('woff2'),
+		url('../fonts/Gotham-Book.woff') format('woff'),
+		url('../fonts/Gotham-Book.ttf') format('truetype'),
+		url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+	background-color: #1b1b1b;
+  	font-family: "Gotham Book", sans-serif;
+	font-size: 14px;
+	line-height: normal;
+	color: #fff;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "Gotham", sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url(../img/bg-hero.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+}
+
+header .header-content .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header .header-content .header-content-inner hr {
+    margin: 30px auto;
+}
+
+header .header-content .header-content-inner p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%;
+    }
+
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    header .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+    }
+
+    header .header-content .header-content-inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 18px;
+    }
+}
+
+.logo{
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.about{
+	background-color: #ff006c;
+	padding: 50px 0;
+}
+
+.about h1{
+	font-size: 60px;
+	font-weight: bold;
+	margin: 0;
+}
+.about h3{
+	font-size: 50px;
+	margin: 0;
+	font-family: 'Gotham';
+	font-weight: 300;
+}
+.about h3 span{
+	font-weight: bold;
+}
+.about p{
+	font-size: 14px;
+	margin: 20px 0;
+}
+.about p a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+	font-family: 'Gotham';
+}
+.speakers{
+	padding: 50px 0;
+	background: url(../img/bg-palestrantes.jpg) center center no-repeat;
+    background-attachment: fixed;
+	background-size:cover;
+}
+
+.programacao{
+	background-color: #1b1b1b;
+	min-height: 800px;
+}
+
+.programacao .title{
+	margin-bottom: 50px;
+}
+
+.partners{
+	color: #1b1b1b;
+	background-color: #fff;
+	min-height: 400px;
+	padding: 40px 0;
+}
+
+.date, .location{
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+
+.info-event{
+	display: inline-block;
+	position: relative;
+	padding-left: 67px;
+	margin: 30px auto;
+}
+
+.info-event:before{
+	content: "";
+	width: 56px;
+	height: 67px;
+	display: block;
+	position: absolute;
+	left: 0;
+	background: url(../img/sprites.png) 0 0 no-repeat;
+}
+
+.date h3{
+	font-size: 65px;
+	font-weight: bold;
+	margin:-5px 0 0;
+}
+
+.date h3 span{
+	color: #2095f3;
+}
+
+.date h5{
+	font-weight: bold;
+	font-size: 46px;
+	margin: -11px 0 0 3px;
+}
+
+.buttons-header{
+	display: block;
+}
+
+.location{
+	margin-left: 10px;
+	color: #2095f3;
+	font-size: 20px;
+	font-family: 'Gotham';
+	font-weight: 300;
+	line-height: 25px;
+}
+
+.btn{
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.buttons-header .btn{
+	border: 4px solid #2095f3;
+	color: #fff;
+	margin: 0 4px;
+    height: 55px;
+    line-height: 49px;
+    padding: 0 18px;
+}
+
+.buttons-header .btn:hover{
+	background-color: rgba(43,151,240,0.5);
+}
+
+.buttons-header .btn-call{
+	border-color: #ff006c;
+}
+
+.buttons-header .btn-call:hover{
+	background-color: rgba(255,0,108,0.5);
+}
+
+.icon-inscreva{
+	margin-right: 4px;
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	background:url(../img/sprites.png) -66px 0 no-repeat;
+	vertical-align: middle;
+}
+
+.icon-c4p{
+	margin-right: 4px;
+	width: 27px;
+	height: 32px;
+	display: inline-block;
+	background:url(../img/sprites.png) -66px -116px no-repeat;
+	vertical-align: middle;
+}
+
+.social-icon{
+	display: inline-block;
+	vertical-align: middle;
+	width: 23px;
+	height: 23px;
+	background:url(../img/sprites.png) -65px -33px no-repeat;
+	opacity: .9;
+	margin-right: 4px;
+}
+
+.social-icon:hover{
+	opacity: 1;
+}
+
+.icon-instagram{
+	background-position: -65px -61px
+}
+
+.icon-twitter{
+	background-position: -66px -88px
+}
+
+.social-text{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Gotham';
+	text-transform: uppercase;
+}
+
+.card{
+	border-radius: 5px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d11f8a+0,467bde+100 */
+	background: #d11f8a; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #d11f8a 0%, #467bde 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #d11f8a 0%,#467bde 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #d11f8a 0%,#467bde 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d11f8a', endColorstr='#467bde',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	color: #fff;
+	margin-top: 75px;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	height: 240px;
+	margin: 100px auto 50px;
+}
+
+.card-photo{
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	display: block;
+	margin: -75px auto 20px;
+}
+
+.card-name, .card-function{
+	font-family: 'Gotham';
+	font-size: 26px;
+	font-weight: bold;
+	display: block;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+.card-function{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.card-location{
+	font-size: 18px;
+}
+
+.programacao{
+	padding: 50px 0;
+}
+
+.timeline-icon{
+	width: 80px;
+	height: 80px;
+	background-color: #ff006c;
+	display: inline-block;
+	vertical-align: top;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: relative;
+	z-index: 2;
+}
+
+.timeline{
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 600px;
+}
+
+.timeline li{
+	position: relative;
+	padding-bottom: 38px;
+}
+
+.timeline-content{
+	max-width: 80%;
+	margin-left: 12px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.timeline-time{
+	color: #fff;
+	font-family: 'Gotham';
+	font-size: 26px;
+	font-weight: 500;	
+}
+
+.timeline-title{
+	color: #2b97f0;
+	font-family: 'Gotham';
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;	
+}
+
+.title{
+	font-weight: bold;
+	font-size: 50px;
+	font-family: 'Gotham';
+}
+
+.icon-credenciamento{
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 16px auto 0;
+	background:url(../img/sprites.png) 0 -69px no-repeat;
+}
+
+.icon-abertura{
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 16px auto 0;
+	background:url(../img/sprites.png) 8px -321px no-repeat;
+}
+
+.icon-palestrante{
+	width: 35px;
+	height: 50px;
+	display: block;
+	margin: 16px auto 0;
+	background:url(../img/sprites.png) 0 -122px no-repeat;
+}
+
+.icon-almoco{
+	width: 55px;
+	height: 36px;
+	display: block;
+	margin: 20px auto 0;
+	background:url(../img/sprites.png) 0 -176px no-repeat;
+}
+
+.icon-coffee{
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 12px auto 0;
+	background:url(../img/sprites.png) 2px -261px no-repeat;
+}
+
+.icon-flag{
+	width: 41px;
+	height: 41px;
+	display: block;
+	margin: 20px auto 0;
+	background:url(../img/sprites.png) 2px -219px no-repeat;
+}
+
+.timeline-palestrante{
+	background: #d11f8a; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #d11f8a 0%, #467bde 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #d11f8a 0%,#467bde 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #d11f8a 0%,#467bde 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d11f8a', endColorstr='#467bde',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.timeline-speaker{
+	font-size: 16px;
+	color: #ff006c;
+	margin-bottom: 6px;
+	font-family: 'Gotham';
+	font-weight: 500;
+}
+
+.timeline-description{
+	font-style: italic;
+}
+
+.line {
+    position: absolute;
+    left: 38px;
+    margin: 0 auto;
+    height: 100%;
+    width: 3px;
+    display: block;
+    z-index: 1;
+    background-color: #d1055c;
+}
+
+.timeline li:last-child .line{
+	display: none;
+}
+
+#map {
+	width: 100%;
+	height: 400px;
+}
+
+.map{
+	position: relative;
+}
+
+.map-info{
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	z-index: 10;
+	background-color: #fff;
+	padding: 40px;
+	color: #1b1b1b;
+	font-size: 16px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+}
+
+.map-title{
+	font-size: 22px;
+	margin-bottom: 8px;
+	display: block;
+}
+
+.partner-title{
+	color:#6d6d6d;
+	display: block;
+	padding-bottom: 10px;
+	font-size: 26px;
+	text-align: center;
+	max-width: 400px;
+	margin: 30px auto;
+	border-bottom: 1px solid #ccc;
+}
+
+.img-partner{
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.btn-blu{
+	background-color: #2b97f0;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Gotham';
+	font-weight: 300;
+	padding: 10px 30px;
+}
+
+.btn-blu:hover{
+	color: #fff;
+	background-color: #278cdf;
+}
+.partner-gold{
+	max-width: 500px;
+}
+.partner-silver{
+	max-width: 300px;
+}
+
+.partner-bronze{
+	max-width: 200px;
+}
+
+.partner{
+	max-width: 200px;
+}
+
+.title-parceiros{
+	margin-top: 60px;
+}
