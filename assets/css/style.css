@@ -93,7 +93,7 @@ h6,
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+    min-height: 100%;
     text-align: center;
     color: #fff;
     background-image: url(../img/bg-hero.jpg);
@@ -353,7 +353,6 @@ header .header-content .header-content-inner p {
 	background: linear-gradient(135deg,  #d11f8a 0%,#467bde 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d11f8a', endColorstr='#467bde',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	color: #fff;
-	margin-top: 75px;
 	text-align: center;
 	display: inline-block;
 	width: 100%;
@@ -656,5 +655,123 @@ header .header-content .header-content-inner p {
 }
 
 @media (max-width: 475px){
-    
+ 	.info-event:before{
+ 		content: "";
+ 		background-image: none;
+ 	}   
+ 	.info-event{
+ 		padding-left: 0;
+ 	}
+ 	.date h3{
+ 		font-size: 40px;
+ 	}
+ 	.date h5{
+ 		font-size: 28px;
+ 		margin-top: 0;
+ 	}
+ 	.location {
+ 		margin-left: 5px;
+	    font-size: 14px;
+	    line-height: 17px;
+	}
+	.logo{
+		max-width: 270px;
+	}
+	.buttons-header .btn{
+		display: block;
+		margin: 10px 0;
+	}
+	.card-name, .card-function{
+		font-size: 22px;
+	}
+	.card-function{
+		font-size: 15px;
+	}
+	.card-location{
+		font-size: 14px;
+	}
+	.card{
+		height: 220px;
+		margin-bottom: 20px;
+	}
+	.about h3, .title{
+		font-size: 30px;
+	}
+	.programacao, .speakers{
+		padding: 20px 0;
+	}
+	.timeline-icon{
+		width: 60px;
+		height: 60px;
+	}
+	.line{
+		width: 2px;
+		left: 29px;
+	}
+	.timeline-content{
+		max-width: 72%;
+	}
+	.timeline-title{
+		font-size: 18px;
+	}
+	.timeline-time{
+		font-size: 16px;
+	}
+	.timeline-description{
+		font-size: 12px;
+	}
+	.icon-credenciamento{
+		width: 40px;
+		height: 40px;
+		background-position: 0 -57px;
+		margin-top: 12px;
+		background-size: 80px 297px;
+	}
+	.icon-abertura{
+		width: 40px;
+		height: 40px;
+		background-position: 7px -257px;
+		margin-top: 12px;
+		background-size: 80px 297px;
+	}
+	.icon-palestrante{
+		width: 29px;
+		height: 40px;
+		background-position: 0 -97px;
+		margin-top: 11px;
+		background-size: 80px 297px;
+	}
+	.icon-almoco{
+		width: 45px;
+    	height: 26px;
+		background-position: 0 -144px;
+		margin-top: 18px;
+		background-size: 80px 297px;
+	}
+	.icon-coffee{
+		width: 40px;
+    	height: 40px;
+		background-position: 2px -209px;
+		margin-top: 10px;
+		background-size: 80px 297px;
+	}
+	.icon-flag{
+		width: 30px;
+		height: 34px;
+		background-position: 2px -175px;
+		margin-top: 15px;
+		background-size: 80px 297px;
+	}
+	.map-info{
+		border-radius: 0;
+		position: relative;
+		left: 0;
+		width: 100%;
+		box-shadow: none;
+	}
+	.img-partner{
+		display: block;
+		margin: 20px auto 30px;
+		width: 100%;
+	}
 }
