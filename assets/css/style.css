@@ -590,14 +590,14 @@ header .header-content .header-content-inner p {
 	background-color: #278cdf;
 }
 .partner-gold{
-	max-width: 500px;
+	max-width: 340px;
 }
 .partner-silver{
-	max-width: 300px;
+	max-width: 230px;
 }
 
 .partner-bronze{
-	max-width: 200px;
+	max-width: 230px;
 }
 
 .partner{
@@ -606,4 +606,55 @@ header .header-content .header-content-inner p {
 
 .title-parceiros{
 	margin-top: 60px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1199px){
+
+}
+
+@media (max-width: 991px){
+    .date h3{
+    	font-size: 55px;
+    }
+    .date h5{
+    	font-size: 39px;
+    }
+    .location{
+    	font-size: 16px;
+    	line-height: 21px;
+    }
+    .about h1{
+    	font-size: 40px;
+    }
+    .about h3, .title{
+    	font-size: 36px;
+    }
+    .timeline-time{
+    	font-size: 20px;
+    }
+    .timeline-title{
+    	font-size: 24px;
+    }
+    .map-title{
+    	font-size: 18px;
+    }
+    .map-info{
+    	font-size: 14px;
+    	left: 5%;
+    }
+    .partner-title{
+    	font-size: 20px;
+    }
+}
+
+@media (max-width: 767px){
+    .logo{
+    	max-width: 400px;
+    }
+}
+
+@media (max-width: 475px){
+    
 }
