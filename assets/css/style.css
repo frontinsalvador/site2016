@@ -215,6 +215,10 @@ header .header-content .header-content-inner p {
 	padding: 40px 0;
 }
 
+.partners h1{
+	color: #9e9e9e;
+}
+
 .date, .location{
 	display: inline-block;
 	vertical-align: top;
@@ -560,7 +564,7 @@ header .header-content .header-content-inner p {
 }
 
 .partner-title{
-	color:#6d6d6d;
+	color: #9e9e9e;
 	display: block;
 	padding-bottom: 10px;
 	font-size: 26px;
@@ -774,4 +778,13 @@ header .header-content .header-content-inner p {
 		margin: 20px auto 30px;
 		width: 100%;
 	}
+	header{
+    	background-attachment: scroll;
+    }
+    .speakers{
+    	background-attachment: scroll;
+	    background-size: contain;
+	    background-repeat: repeat-y;
+	    background-position: 0 0;
+    }
 }
