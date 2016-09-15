@@ -439,7 +439,7 @@ header .header-content .header-content-inner p {
 .timeline-title{
 	color: #2b97f0;
 	font-family: 'Gotham';
-	font-size: 30px;
+	font-size: 26px;
 	text-transform: uppercase;
 	font-weight: bold;	
 }
@@ -604,11 +604,12 @@ header .header-content .header-content-inner p {
 }
 
 .partner{
-	max-width: 200px;
+	max-width: 160px;
 }
 
 .title-parceiros{
 	margin-top: 60px;
+	font-size: 40px;
 }
 
 /* RESPONSIVO */
