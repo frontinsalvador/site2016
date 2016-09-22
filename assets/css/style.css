@@ -181,7 +181,7 @@ header .header-content .header-content-inner {
 	color: #1b1b1b;
 	background-color: #fff;
 	min-height: 400px;
-	padding: 40px 0;
+	padding: 40px 0 80px;
 }
 
 .partners h1{
@@ -573,11 +573,11 @@ header .header-content .header-content-inner {
 }
 
 .partner-bronze{
-	max-width: 230px;
+	max-width: 190px;
 }
 
 .partner{
-	max-width: 160px;
+	max-width: 150px;
 }
 
 .title-parceiros{
@@ -605,6 +605,35 @@ header .header-content .header-content-inner {
 	font-weight: bold;
 	line-height: 90px;
 	margin: 30px 0;
+}
+
+.footer{
+	padding: 20px 0;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.copyright{
+	float: left;
+}
+
+.links-footer{
+	float: right;
+}
+
+.links-footer a{
+	color: #ff006c;
+	margin: 0 8px;
+	display: inline-block;
+	text-decoration: none;
+	-webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.links-footer a:hover{
+	color: #2b97f0;
 }
 
 /* RESPONSIVO */
@@ -704,9 +733,24 @@ header .header-content .header-content-inner {
     header .header-content {
 	    padding: 0 20px;
 	}
+	.footer{
+		text-align: center;
+	}
+	.copyright{
+		margin-bottom: 20px;
+		float: none;
+		display: block;
+	}
+	.links-footer{
+		float: none;
+		display: block;
+	}
 }
 
 @media (max-width: 767px){
+	.links-footer a{
+		margin-bottom: 20px;
+	}
     .logo{
     	max-width: 170px;
     }
@@ -744,6 +788,9 @@ header .header-content .header-content-inner {
 }
 
 @media (max-width: 475px){
+	.links-footer a{
+		display: block;
+	}
 	.maior{
 		font-size: 29px;
     	line-height: 28px;
